@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Catálogo de la Biblioteca DJANGO</h1>
+
+  <p>Bienvenido al catálogo de la biblioteca local.</p>
+
+  <h2>Estadísticas</h2>
+  <ul>
+    <li>Libros: {{ num_books }}</li>
+    <li>Ejemplares: {{ num_instances }}</li>
+    <li>Disponibles: {{ num_instances_available }}</li>
+    <li>Autores: {{ num_authors }}</li>
+  </ul>
+
+{% endblock %}
